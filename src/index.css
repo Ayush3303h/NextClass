@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2563eb;
+  --secondary: #4f46e5;
+  --accent: #818cf8;
+  --background: #f8fafc;
+  --text: #1e293b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.animate-fade {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-lg p-6 animate-fade;
+}
