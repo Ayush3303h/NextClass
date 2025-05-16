@@ -1,26 +1,59 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { 
   BookOpen, 
   FileText, 
   LogOut, 
   Upload,
-  PieChart
+  PieChart,
+  Calendar,
+  Users,
+  Bell
 } from 'lucide-react';
 
 function Dashboard() {
   const { currentUser, logout } = useAuth();
+  const navigate = useNavigate();
   const [stats, setStats] = useState({
     lectureAttendance: 85,
     completedAssignments: 12,
-    totalAssignments: 15
+    totalAssignments: 15,
+    upcomingClasses: 3
   });
 
   const progressVariants = {
     hidden: { pathLength: 0 },
     visible: { pathLength: 1 }
   };
+
+  const menuItems = [
+    {
+      title: "Assignments",
+      icon: <FileText className="w-6 h-6" />,
+      onClick: () => navigate('/assignments'),
+      color: "bg-blue-500"
+    },
+    {
+      title: "Schedule",
+      icon: <Calendar className="w-6 h-6" />,
+      onClick: () => {},
+      color: "bg-green-500"
+    },
+    {
+      title: "Classmates",
+      icon: <Users className="w-6 h-6" />,
+      onClick: () => {},
+      color: "bg-purple-500"
+    },
+    {
+      title: "Notifications",
+      icon: <Bell className="w-6 h-6" />,
+      onClick: () => {},
+      color: "bg-yellow-500"
+    }
+  ];
 
   return (
     <motion.div
@@ -35,17 +68,51 @@ function Dashboard() {
             <BookOpen className="w-8 h-8 text-blue-600" />
             <span className="text-xl font-bold">EduTech</span>
           </div>
-          <button
-            onClick={logout}
-            className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
-          >
-            <LogOut className="w-5 h-5" />
-            <span>Logout</span>
-          </button>
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={logout}
+              className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
+            >
+              <LogOut className="w-5 h-5" />
+              <span>Logout</span>
+            </button>
+          </div>
         </div>
       </nav>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Welcome Section */}
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          className="mb-8"
+        >
+          <h1 className="text-3xl font-bold text-gray-900">
+            Welcome back, {currentUser?.email?.split('@')[0]}!
+          </h1>
+          <p className="text-gray-600 mt-2">Here's what's happening with your courses today.</p>
+        </motion.div>
+
+        {/* Quick Actions */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          {menuItems.map((item, index) => (
+            <motion.button
+              key={item.title}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={item.onClick}
+              className={`p-4 rounded-xl shadow-sm flex flex-col items-center justify-center space-y-2 ${item.color} text-white`}
+            >
+              {item.icon}
+              <span className="font-medium">{item.title}</span>
+            </motion.button>
+          ))}
+        </div>
+
+        {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Progress Card */}
           <motion.div
@@ -86,6 +153,7 @@ function Dashboard() {
           <motion.div
             className="card"
             whileHover={{ scale: 1.02 }}
+            onClick={() => navigate('/assignments')}
           >
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold">Assignments</h3>
@@ -97,22 +165,19 @@ function Dashboard() {
             <p className="text-gray-600 mt-2">Completed assignments</p>
           </motion.div>
 
-          {/* Upload Assignment Card */}
+          {/* Upcoming Classes Card */}
           <motion.div
             className="card"
             whileHover={{ scale: 1.02 }}
           >
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold">Upload Assignment</h3>
-              <Upload className="w-6 h-6 text-blue-600" />
+              <h3 className="text-lg font-semibold">Upcoming Classes</h3>
+              <Calendar className="w-6 h-6 text-blue-600" />
             </div>
-            <label className="flex flex-col items-center px-4 py-6 bg-blue-50 text-blue rounded-lg tracking-wide border border-blue-200 cursor-pointer hover:bg-blue-100">
-              <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z" />
-              </svg>
-              <span className="mt-2 text-sm text-gray-600">Select a file</span>
-              <input type='file' className="hidden" />
-            </label>
+            <div className="text-3xl font-bold text-blue-600">
+              {stats.upcomingClasses}
+            </div>
+            <p className="text-gray-600 mt-2">Classes today</p>
           </motion.div>
         </div>
       </main>
