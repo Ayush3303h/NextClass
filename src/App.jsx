@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Assignments from './pages/Assignments';
 import AssignmentDetail from './pages/AssignmentDetail';
+import Lectures from './pages/Lectures';
+import Classmates from './pages/Classmates';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 
 const PrivateRoute = ({ children }) => {
@@ -51,6 +53,22 @@ function App() {
               element={
                 <PrivateRoute>
                   <AssignmentDetail />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/lectures"
+              element={
+                <PrivateRoute>
+                  <Lectures />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/classmates"
+              element={
+                <PrivateRoute>
+                  <Classmates />
                 </PrivateRoute>
               }
             />

@@ -10,7 +10,8 @@ import {
   PieChart,
   Calendar,
   Users,
-  Bell
+  Bell,
+  Code
 } from 'lucide-react';
 
 function Dashboard() {
@@ -36,6 +37,12 @@ function Dashboard() {
       color: "bg-blue-500"
     },
     {
+      title: "Lectures",
+      icon: <BookOpen className="w-6 h-6" />,
+      onClick: () => navigate('/lectures'),
+      color: "bg-indigo-500"
+    },
+    {
       title: "Schedule",
       icon: <Calendar className="w-6 h-6" />,
       onClick: () => {},
@@ -44,8 +51,14 @@ function Dashboard() {
     {
       title: "Classmates",
       icon: <Users className="w-6 h-6" />,
-      onClick: () => {},
+      onClick: () => navigate('/classmates'),
       color: "bg-purple-500"
+    },
+    {
+      title: "Playground",
+      icon: <Code className="w-6 h-6" />,
+      onClick: () => window.open('https://my.newtonschool.co/playground/code/v0e8brt91ipl', '_blank'),
+      color: "bg-orange-500"
     },
     {
       title: "Notifications",
@@ -66,7 +79,7 @@ function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <BookOpen className="w-8 h-8 text-blue-600" />
-            <span className="text-xl font-bold">EduTech</span>
+            <span className="text-xl font-bold">NextClasses</span>
           </div>
           <div className="flex items-center space-x-4">
             <button
