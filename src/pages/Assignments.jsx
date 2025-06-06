@@ -22,7 +22,7 @@ const dummyModules = [
         topics: ['Working with "ref"s', 'Working with Fragments, portals, refs'],
         solvedBy: 1123,
         solvedPercent: 81,
-        link: "https://my.newtonschool.co/playground/newton-box/ga9qqzbbyynv",
+        link: "https://my.newtonschool.co/playground/code/y2ab7zrvhh8l",
       },
       {
         id: 102,
