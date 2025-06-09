@@ -18,81 +18,27 @@ const Lectures = () => {
   const pythonLecturesData = [
     {
       id: 101,
-      title: "Python Function, Fn def/Calling a fn, Return statement, Arguments and parameter",
-      date: "Sep 23, 2024",
+      title: " Intro to Programming, Computational Thinking, Pseudocode",
+      date: "jun 9, 2025",
       duration: "1:30:00",
       notesIncluded: true,
       xp: 30,
       totalXp: 30,
       status: "completed",
-      notesUrl: "https://d3dyfaf3iutrxo.cloudfront.net/file/course/video_session/whiteboard/74d46abd557444d28a6d325e964bfd69.pdf"
+      notesUrl: "https://drive.google.com/file/d/124MUikc78dNGRPioqgshhPKrEjqiMJ9I/view?usp=sharing"
     },
     {
       id: 102,
-      title: "Nested if-else, Python operators, Python logical Operators, And, Or, Not",
-      date: "Sep 11, 2024",
-      duration: "1:30:04",
+      title: " Flowcharts andFoundations",
+      date: "jun 10, 2025",
+      duration: "1:30:00",
       notesIncluded: true,
       xp: 30,
       totalXp: 30,
       status: "completed",
-      notesUrl: "/dummy_notes/lecture_102_notes.pdf"
+      notesUrl: "https://drive.google.com/file/d/1wH1UCZ_Od8WApj1apO_Pdi3-dn9gp81i/view?usp=sharing"
     },
-    {
-      id: 103,
-      title: "Comparison operators, Precedence and Associativity, Conditional Statements, Pyth ...",
-      date: "Sep 9, 2024",
-      duration: "1:30:04",
-      notesIncluded: true,
-      xp: 30,
-      totalXp: 30,
-      status: "completed",
-      notesUrl: "/dummy_notes/lecture_103_notes.pdf"
-    },
-    {
-      id: 104,
-      title: "Type Casting in Python, Python Input, Input() function, Input() for different da ...",
-      date: "Sep 4, 2024",
-      duration: "1:30:04",
-      notesIncluded: false,
-      xp: 30,
-      totalXp: 30,
-      status: "pending",
-      notesUrl: "/dummy_notes/lecture_104_notes.pdf"
-    },
-    {
-      id: 105,
-      title: "Python variables, Assignment operator, Primitive Datatypes, Int, Float, Str, Boo ...",
-      date: "Sep 2, 2024",
-      duration: "1:30:04",
-      notesIncluded: true,
-      xp: 30,
-      totalXp: 30,
-      status: "completed",
-      notesUrl: "/dummy_notes/lecture_105_notes.pdf"
-    },
-     {
-      id: 106,
-      title: "Python Introduction, Print function in python, Hello World in Python, Comments i ...",
-      date: "Aug 29, 2024",
-      duration: "1:14:24",
-      notesIncluded: false,
-      xp: 30,
-      totalXp: 30,
-      status: "completed",
-      notesUrl: "/dummy_notes/lecture_106_notes.pdf"
-    },
-     {
-      id: 107,
-      title: "Computer Language Introduction, Flow Chart, Binary, HLL VS LLL, Compiler and Int ...",
-      date: "Aug 27, 2024",
-      duration: "0:58:03",
-      notesIncluded: false,
-      xp: 30,
-      totalXp: 30,
-      status: "completed",
-      notesUrl: "/dummy_notes/lecture_107_notes.pdf"
-    }
+
   ];
 
   const handleStartLearningClick = (courseId) => {

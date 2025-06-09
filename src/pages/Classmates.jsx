@@ -11,11 +11,18 @@ const Classmates = () => {
 
   // Dummy data - replace with actual fetch from your backend
   const dummyEmails = [
-    'student1@example.com',
-    'student2@example.com',
-    'student3@example.com',
-    'student4@example.com',
-    'student5@example.com',
+    'Anushka Gupta',
+    'Anushka naag',
+    'Arzoo Kurmi',
+    'Yashi verma',
+    'Durga Yadav',
+    'Ronak Ahuja',
+    'Smita Sahu',
+    'Tarun yadav',
+    'Harshit patel',
+    'Aashu vasnik',
+    'Dev sharma',
+    'Khawish balani',
   ];
 
   useEffect(() => {
