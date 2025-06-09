@@ -20,7 +20,7 @@ function Home() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        Welcome to EduTech
+        Welcome to NextClasses
       </motion.h1>
       <motion.p
         className="text-xl text-white/80 mb-10"

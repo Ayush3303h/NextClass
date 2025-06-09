@@ -9,8 +9,8 @@ import {
 const dummyModules = [
   {
     id: 1,
-    name: 'WAP C',
-    description: 'Revision | fetch | filter | useRef',
+    name: 'Python',
+    description: 'Introduction | Input | Loops | ',
     release: '8 May 2025',
     deadline: '15 May 2025 2:12 AM',
     assignments: [
