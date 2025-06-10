@@ -38,6 +38,17 @@ const Lectures = () => {
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1wH1UCZ_Od8WApj1apO_Pdi3-dn9gp81i/view?usp=sharing"
     },
+    {
+      id: 103,
+      title: " Introduction To Python",
+      date: "jun 11, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/1fcCuidMOsBS6SFJUAgWY5XzD4UlY5G6N/view?usp=sharing"
+    },
 
   ];
 
