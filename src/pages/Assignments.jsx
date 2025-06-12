@@ -24,6 +24,16 @@ const dummyModules = [
         solvedPercent: 81,
         link: "https://my.newtonschool.co/playground/code/qvjvx0kfal9k",
       },
+      {
+        id: 102,
+        title: 'Print Date and Name',
+        difficulty: 'easy',
+        xp: 10,
+        topics: ['Hello World in Python'],
+        solvedBy: 1123,
+        solvedPercent: 81,
+        link: "https://my.newtonschool.co/playground/code/ta49c3v4glg1",
+      },
     ],
   },
 ];

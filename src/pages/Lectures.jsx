@@ -49,6 +49,17 @@ const Lectures = () => {
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1fcCuidMOsBS6SFJUAgWY5XzD4UlY5G6N/view?usp=sharing"
     },
+    {
+      id: 104,
+      title: " Newline Character,Sep,end operator",
+      date: "jun 12, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/1eOWAGNHJINJKLzBO8BOANL3qv9mF7jgQ/view?usp=sharing"
+    },
 
   ];
 
