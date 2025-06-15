@@ -63,7 +63,7 @@ const Lectures = () => {
     {
       id: 105,
       title: "Variables and Datatypes",
-      date: "jun 12, 2025",
+      date: "jun 13, 2025",
       duration: "1:30:00",
       notesIncluded: true,
       xp: 30,
@@ -71,7 +71,17 @@ const Lectures = () => {
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1UsjEPcvS25nVGGPr5UDJBCdNYGZHppG2/view?usp=sharing"
     },
-
+    {
+      id: 106,
+      title: "User Input and Basic Operators",
+      date: "jun 14, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/1XDVOFzkQf1dFnbOE1eB4k_9uLC-fKekj/view?usp=sharing"
+    },
   ];
 
   const handleStartLearningClick = (courseId) => {
