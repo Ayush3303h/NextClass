@@ -82,6 +82,17 @@ const Lectures = () => {
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1XDVOFzkQf1dFnbOE1eB4k_9uLC-fKekj/view?usp=sharing"
     },
+    {
+      id: 107,
+      title: "Conditional Statements",
+      date: "jun 15, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/1w98_6yy57y0u10DcJ4bWIpE4oIVK24Pf/view?usp=sharing"
+    },
   ];
 
   const handleStartLearningClick = (courseId) => {
