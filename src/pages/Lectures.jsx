@@ -85,13 +85,24 @@ const Lectures = () => {
     {
       id: 107,
       title: "Conditional Statements",
-      date: "jun 15, 2025",
+      date: "jun 19, 2025",
       duration: "1:30:00",
       notesIncluded: true,
       xp: 30,
       totalXp: 30,
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1w98_6yy57y0u10DcJ4bWIpE4oIVK24Pf/view?usp=sharing"
+    },
+    {
+      id: 108,
+      title: "Logical Operators: AND, OR, NOT",
+      date: "jun 20, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/1_Xe7CINMBxKO_OKCEEwlpi7_OiYW64nh/view?usp=sharing"
     },
   ];
 
