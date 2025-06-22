@@ -104,6 +104,17 @@ const Lectures = () => {
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1_Xe7CINMBxKO_OKCEEwlpi7_OiYW64nh/view?usp=sharing"
     },
+    {
+      id: 109,
+      title: "Functions",
+      date: "jun 23, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/1vC-eSykrDvmKj6qeb9bpvOMlxKAw8kiH/view?usp=sharing"
+    },
   ];
 
   const handleStartLearningClick = (courseId) => {
