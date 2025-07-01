@@ -174,6 +174,16 @@ const dummyModules = [
         solvedPercent: 81,
         link: "https://my.newtonschool.co/playground/code/ng6f0z72rhql",
       },
+      {
+        id: 117,
+        title: 'Books Catalog : Access Lists',
+        difficulty: 'easy',
+        xp: 10,
+        topics: ['list'],
+        solvedBy: 1123,
+        solvedPercent: 81,
+        link: "https://my.newtonschool.co/playground/code/3goqeaudppo8",
+      },
     ],
   },
 ];
