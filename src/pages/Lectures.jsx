@@ -126,6 +126,17 @@ const Lectures = () => {
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1RR67WLNsIpHuHNJ7Ua6QcELAi30GD1hY/view?usp=sharing"
     },
+    {
+      id: 111,
+      title: "Lists-1",
+      date: "jun 26, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/18RbuUQ1MJmj5MzUxX5L6znaBli1ZAXaG/view?usp=sharing"
+    },
   ];
 
   const handleStartLearningClick = (courseId) => {
