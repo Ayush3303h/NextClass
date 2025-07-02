@@ -115,6 +115,17 @@ const Lectures = () => {
       status: "completed",
       notesUrl: "https://drive.google.com/file/d/1vC-eSykrDvmKj6qeb9bpvOMlxKAw8kiH/view?usp=sharing"
     },
+    {
+      id: 110,
+      title: "Introduction to Loops",
+      date: "jun 25, 2025",
+      duration: "1:30:00",
+      notesIncluded: true,
+      xp: 30,
+      totalXp: 30,
+      status: "completed",
+      notesUrl: "https://drive.google.com/file/d/1RR67WLNsIpHuHNJ7Ua6QcELAi30GD1hY/view?usp=sharing"
+    },
   ];
 
   const handleStartLearningClick = (courseId) => {
